@@ -1,0 +1,186 @@
+/**
+ * @name lucid
+ * @description Transparent (WET!!) dreams..
+ * @author azazeldev
+ * @version 1.0.0
+ * @website https://github.com/azazelcodes/discord-lucid
+ * @source https://github.com/azazelcodes/discord-lucid/blob/master/lucd.theme.css
+ * @authorId 610057690651033600
+ * @authorLink https://comingsoon.lol/
+*/
+
+/***************************************** -□x\
+|     ᴛʜɪꜱ ɪꜱ ᴀ                                
+|     (_(                                     
+|     /_/'                                    
+|     "     ☆z.                               
+|     ᴛʜᴇᴍᴇ                              cool!
+|                                           |  
+| Inspired by sanoojes' Spicetify-Lucid     v 
+| https://github.com/sanoojes/Spicetify-Lucid 
+\*********************************************/  
+
+@import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+
+* {
+    font-family: Poppins !important;
+    scrollbar-width: none;
+    box-shadow: none;
+    border: none;
+}
+
+:root {
+    --outline: rgba(255, 255, 255, 0.145);
+    --deep: #121212;
+}
+
+/* HOMEPAGE */
+.channel__972a0:nth-of-type(n+2):nth-of-type(-n+3) { display: none; } /* Shop & Nitro */
+.blockedIgnoredSettingsNotice__6811a { display: none; }
+
+/* GENERAL */
+.sidebar_c48ade, .container__2637a { background: transparent !important; }
+
+.footer__214dc { display: none; } /* Discovery */
+
+.container__37e49 { /* Profile Thingy */
+    margin: 1%;
+    background: transparent !important;
+}
+
+.panels_c48ade {  /* Profile Thingy Container */
+    background: rgba(0, 0, 0, 0.3) !important;
+    border-top-left-radius: 10px;
+    border: 1px solid var(--outline);
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.guilds_c48ade { /* Sidebar */
+    background: transparent !important;
+    scale: 90%;
+}
+
+.appMount__51fd7,
+.app__160d8,
+.notAppAsidePanel_a3002d,
+html > body > div > div:nth-of-type(4) > div > div > div > div,
+body { background: transparent !important; }
+
+/* I dont remember */
+.container__133bf { background: transparent !important; }
+
+/* CHAT */
+.chatContent_f75fb0, .chat_f75fb0 { background: transparent !important; }
+
+.messagesWrapper__36d07, .title_f75fb0 {
+    margin-left: 0.8%;
+    margin-right: 0.8%;
+}
+
+/* Title */
+.title_f75fb0, .container__9293f, .themed__9293f {
+    background: rgba(0, 0, 0, 0.2) !important;
+    border-radius: 10px 10px 0 0;
+}
+
+.children__9293f::after { display: none; }
+
+/* Message bubbles!! */
+.messageListItem__5126c {
+    margin-left: 2%;
+    margin-right: 2%;
+    border: 1px solid var(--outline);
+    border-bottom-width: 0;
+    border-top-width: 0;
+}
+
+.messageListItem__5126c:has(.groupStart__5126c) { /* First */
+    margin-top: 1%;
+    border-top-width: 1px;
+    border-radius: 10px 10px 0 0;
+}
+
+.messageListItem__5126c:has(+ .messageListItem__5126c .groupStart__5126c), /* Before another message */
+.messageListItem__5126c:has(+ .divider__5126c), /* Before another day */
+.messageListItem__5126c:has(+ .scrollerSpacer__36d07) /* Newest */ { 
+    border-bottom-width: 1px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-bottom: 1%;
+}
+
+.divider__5126c { margin-bottom: 6%; }
+
+/* Context Actions */
+.messageListItem__5126c:hover { background: var(--outline); }
+
+button[aria-label="Send a gift"] { display: none; }
+button[aria-label="Open GIF picker"] { display: none; }
+button[aria-label="Open sticker picker"] { display: none; }
+button[aria-label="Start an Activity"] { display: none; }
+div[aria-label^="Add Super Reaction"] { display: none; }
+
+/* Inputs */
+.form_f75fb0 {
+    margin: 0;
+    margin-right: 0.6%;
+    height: 57.78125px;
+    background: rgba(0, 0, 0, 0.3) !important;
+    border-top-right-radius: 10px;
+    border: 1px solid var(--outline);
+    border-bottom: 0;
+    border-left: 0;
+}
+
+.channelAppLauncher_e6e74f { display: none; }
+
+.wrapper__44df5 { background: transparent !important; }
+
+/* Channel List & Friends List */
+.scroller__629e4, .content__99f8c {
+    background-color: var(--deep);
+    margin-bottom: 2%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.container_f37cb1, .searchBar__35e86 { background-color: var(--deep); }
+
+/* Member Panel */
+.members_c8ffbb {
+    background: rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid var(--outline);
+    border-radius: 10px;
+    margin: 4%;
+}
+
+.membersWrap_c8ffbb, .container_c8ffbb, .scroller__99e7c, .privateChannels__35e86 {
+    background: transparent !important;
+}
+
+.member__5d473, .member_c8ffbb {
+    background: transparent !important;
+}
+
+/* User Display */
+.container__0f2e8, .container__7d20c,
+.popout_af3b89, 
+.outer_c0bea0 { 
+    background-color: var(--deep);
+    border-radius: 10px;
+    border: 1px solid var(--outline);
+}
+
+.nowPlayingColumn__133bf {
+    background: transparent !important;
+    margin: 2% 0 2% 2%;
+}
+
+/* Detailed Friends List */
+.content__99f8c:has(.sectionTitle__5ec2f) { background: transparent !important; }
+
+.container__9293f, .content__99f8c:has(.sectionTitle__5ec2f) {
+    margin-left: 0.8%;
+    margin-right: 0.8%;
+}
